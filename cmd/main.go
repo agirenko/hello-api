@@ -6,6 +6,11 @@ import (
 	"net/http"
 )
 
+type Resp struct {
+	Language    string `json:"language"`
+	Translation string `json:"translation"`
+}
+
 func main() {
 
 	addr := ":8080"
@@ -28,9 +33,4 @@ func main() {
 	log.Printf("listening on %s\n", addr)
 
 	log.Fatal(http.ListenAndServe(addr, mux))
-}
-
-type Resp struct { // <6>
-	Language    string `json:"language"`
-	Translation string `json:"translation"`
 }
