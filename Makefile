@@ -21,3 +21,4 @@ upgrade-go: #
 
 build:
 	go build -o api cmd/main.go
+
