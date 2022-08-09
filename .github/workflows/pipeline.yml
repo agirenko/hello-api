@@ -4,16 +4,15 @@ on:
   push:
     branches:
       - main
-defaults: # DO NOT INCLUDE
+defaults:
   run:
-    working-directory: ./hello-api
+    working-directory: ~/GolandProjects/hello-api
 
 jobs:
   build:
     name: Build App
     runs-on: ubuntu-latest 
     steps:
-
     - name: Build
       run: make build #
 
