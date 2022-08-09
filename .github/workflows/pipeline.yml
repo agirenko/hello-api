@@ -13,16 +13,17 @@ jobs:
     name: Build App
     runs-on: ubuntu-latest 
     steps:
+    
     - name: Build
-      run: make build #
+      run: make build
 
-    - name: Copy Files #
+    - name: Copy Files
       run: |
-           mkdir  artifacts
-           cp api artifacts/.
+        mkdir  artifacts
+        cp api artifacts/.
 
     - name: Archive #
       uses: actions/upload-artifact@v2
       with:
-          name: api #
-          path: artifacts
+        name: api #
+        path: artifacts
