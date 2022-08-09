@@ -17,7 +17,7 @@ func main() {
 			enc := json.NewEncoder(w)
 			w.Header().Set("Content-Type", "application/json; charset=utf-8")
 			resp := Resp{
-				Language:    "English",
+				Language:    "English Language",
 				Translation: "Hello",
 			}
 			if err := enc.Encode(resp); err != nil {
