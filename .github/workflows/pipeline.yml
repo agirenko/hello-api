@@ -6,7 +6,7 @@ on:
       - main
 defaults:
   run:
-    working-directory: ~/GolandProjects/hello-api
+    working-directory: ./hello-api
 
 jobs:
   build:
