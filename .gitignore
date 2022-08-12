@@ -1,5 +1,7 @@
 .idea/
 api
+coverage.out
+cover.html
 # Binaries for programs and plugins
 *.exe
 *.exe~
